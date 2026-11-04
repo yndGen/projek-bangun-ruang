@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RuangSeru</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div>
+        <h1>RuangSeru!</h1>
+        <p>Pilih bangun ruang & isi ukurannya</p>
+      </div>
+      <button type="button" class="mode-btn" id="modeBtn">🌙</button>
+    </header>
+
+    <nav class="tabs">
+      <button type="button" class="tab" data-key="kubus">Kubus</button>
+      <button type="button" class="tab active" data-key="bola">Bola</button>
+      <button type="button" class="tab" data-key="kerucut">Kerucut</button>
+      <button type="button" class="tab" data-key="tabung">Tabung</button>
+    </nav>
+
+    <section class="box">
+      <div class="content" id="content">
+        <div class="head">
+          <div class="avatar" id="avatar"></div>
+          <div>
+            <h2 id="title">Bola</h2>
+            <p id="desc">Bulat sempurna ke segala arah, seperti bola sepak!</p>
+          </div>
+        </div>
+
+        <form id="form" novalidate>
+          <div class="grid" id="inputs">
+            <label>Jari-jari (r)<input type="number" placeholder="Isi angka" min="0"></label>
+          </div>
+
+          <div class="grid two" id="opts">
+            <label>Satuan panjang
+              <select>
+                <option>cm (sentimeter)</option>
+                <option>mm (milimeter)</option>
+                <option>dm (desimeter)</option>
+                <option>m (meter)</option>
+              </select>
+            </label>
+            <label id="piBox">Nilai π (pi)
+              <select>
+                <option>22/7</option>
+                <option>3,14</option>
+              </select>
+            </label>
+          </div>
+
+          <button type="submit" class="calc-btn">✨ Hitung Sekarang!</button>
+        </form>
+
+        <div class="msg" id="msg" hidden></div>
+      </div>
+    </section>
+
+    <p class="foot">Tip: bola, kerucut, dan tabung memakai π, sedangkan kubus tidak.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -156,3 +156,21 @@ input.err { border-color: #f43f5e; }
   .tabs, .grid.two { grid-template-columns: 1fr 1fr; }
   .grid.two { grid-template-columns: 1fr; }
 }
+
+.avatar {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 2px solid var(--ink);
+  background: var(--tint);
+  display: grid;
+  place-items: center;
+  overflow: hidden; 
+}
+
+.avatar img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}

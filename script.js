@@ -14,7 +14,8 @@ const shapes = {
     tint: '#7dd3fc',
     pi: true,
     fields: ['Jari-jari (r)'],
-    image: 'bola.png'  },
+    image: 'bola.png'  
+  },
 
   kerucut: {
     title: 'Kerucut',
@@ -30,7 +31,8 @@ const shapes = {
     tint: '#86efac',
     pi: true,
     fields: ['Jari-jari (r)', 'Tinggi (t)'],
-    image: 'tabung.png'  }
+    image: 'tabung.png'  
+  }
 };
 
 const tabs = document.querySelectorAll('.tab');
@@ -46,7 +48,7 @@ const modeBtn = document.getElementById('modeBtn');
 
 let active = 'bola';
 
-// Fungsi helper untuk merender avatar (mendukung SVG maupun Gambar PNG)
+// Fungsi render avatar (icon)
 function renderAvatar(s) {
   if (s.image) {
     avatar.innerHTML = `<img src="${s.image}" alt="${s.title}">`;
